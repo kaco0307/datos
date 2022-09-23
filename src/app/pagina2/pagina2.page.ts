@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NavController} from '@ionic/angular';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-pagina2',
@@ -8,17 +9,20 @@ import {NavController} from '@ionic/angular';
 })
 export class Pagina2Page implements OnInit {
 
-  constructor(private NavC:NavController) { }
+  constructor(private NavC:NavController, private ro:ActivatedRoute) { }
 
   ngOnInit() {
 
+    let id = this.ro.snapshot.paramMap.get('id');
+    alert(id);
   }
-
+  /*
   ir_pagina(){
     this.NavC.navigateForward("pagina");
   }
+  */
   ir_home(){
-    this.NavC.navigateBack("home");
+    this.NavC.navigateForward("home");
   }
 
 }

@@ -1,19 +1,19 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-<div class="ion-padding"> 
+  <div class="ion-padding"> 
 
-  <ion-button routerLink="/pagina" routerDirection="forward">   
-    Ir a la pagina
-  </ion-button>
-
-</div>
+    <ion-button (click)="ir_pagina()"  routerDirection="forward">   
+      Ir a pagina 
+    </ion-button>
+  
+  </div>
 
 </ion-content>

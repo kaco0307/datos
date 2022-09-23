@@ -12,7 +12,7 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'pagina',
+    path: 'pagina/:id/:nombre/:apellido/:tel',
     loadChildren: () => import('./pagina/pagina.module').then( m => m.PaginaPageModule)
   },
   {
