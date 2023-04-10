@@ -16,7 +16,7 @@ export class PaginaPage implements OnInit {
 
   ngOnInit() {
 
-    this.id = Number(this.ru.snapshot.paramMap.get('id'));
+     this.id = Number(this.ru.snapshot.paramMap.get('id'));
     this.Apellido = this.ru.snapshot.paramMap.get('apellido');
     this.Nombre = this.ru.snapshot.paramMap.get('nombre');
     this.tel = Number(this.ru.snapshot.paramMap.get('tel'));
